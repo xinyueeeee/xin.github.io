@@ -446,7 +446,10 @@
     background-image: url(images/videomore.png);
     border-radius: 15px;
 }
-
+.video1 .intro1,
+.video2 .intro2 {
+    font: normal normal 12px "微软雅黑";
+}
 
 
 
