@@ -1,0 +1,747 @@
+.header {
+    margin: 0, auto;
+    height: 80px;
+    width: 1642px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.header .logo {
+    float: left;
+    width: 180px;
+    height: 80px;
+    padding-left: 70px;
+    padding-top: 5px;
+    margin-left: 180px;
+}
+
+.daohanglan {
+    float: left;
+    height: 80px;
+    width: 980px;
+}
+
+.daohanglan ul {
+    margin-left: 30px;
+}
+
+.daohanglan li {
+    float: left;
+    margin-left: 60px;
+    line-height: 80px;
+}
+
+.daohanglan li a {
+    padding-bottom: 29px;
+}
+
+.daohanglan li a:hover {
+    color: #64a138;
+    border-bottom: 3px solid #64a138;
+}
+
+.daohanglan .shouye {
+    border-bottom: 3px solid #64a138;
+    color: #64a138;
+}
+
+.search {
+    position: relative;
+    margin-top: 25px;
+    float: left;
+    width: 175px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    width: 172px;
+    height: 28px;
+    padding-left: 30px;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.search span {
+    position: absolute;
+    left: 2px;
+    right: 0;
+    top: 3px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(images/sprites.png);
+    background-position: -79px -69px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner {
+    height: 500px;
+    width: 1642px;
+}
+
+.banner .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.banner .body .shel {
+    width: 1642px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .body .shel .image {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.banner .body .shel .image .im {
+    width: 100%;
+    background-size: cover;
+}
+
+.banner .body .shel .image .im:nth-child(1) {
+    background-image: url("images/首页轮播图1.png");
+}
+
+.banner .body .shel .image .im:nth-child(2) {
+    background-image: url("images/首页轮播图2.png");
+}
+
+
+
+
+.banner .min {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 470px;
+    width: 400px;
+    z-index: 999;
+    left: 870px;
+    transform: translateX(-65%);
+}
+
+.banner .m {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: solid rgba(255, 255, 255, 0.5) 5px;
+    background-color: #fff;
+}
+
+.banner .button {
+    width: 1642px;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+
+.banner .button-left,
+.banner .button-right {
+    font-size: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    line-height: 500px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.banner .button-left {
+    background-position: 14px -60px;
+}
+
+.banner .button-right {
+    background-position: -22px -60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.course .b {
+    height: 40px;
+    width: 1642px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.course1 {
+    width: 1642px;
+    height: 590px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.course1 h2 {
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(167, 212, 197);
+    width: 220px;
+    height: 70px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+.science1,
+.science2,
+.news3,
+.news4 {
+    float: left;
+    width: 350px;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.science1 {
+    margin-left: 150px;
+    width: 300px;
+}
+
+.science1 .pic {
+    height: 305px;
+    width: 300px;
+    background-image: url(images/文章1.png);
+    border-radius: 15px;
+}
+
+.science1 .yinru {
+    width: 300px;
+    height: 28px;
+    margin-top: 5px;
+    font: italic bold 15px/25px "幼圆";
+    color: rgb(115, 148, 165);
+    text-align: center;
+}
+
+.science1 .yinru1 {
+    margin-top: 10px;
+}
+
+.science2 {
+    margin-top: 60px;
+    padding-left: 10px;
+    margin-left: 30px;
+    border: dotted 2px #64a138;
+    border-radius: 15px;
+}
+
+.science2 .pic {
+    margin-left: -25px;
+    margin-top: -35px;
+}
+
+.science21,
+.science22,
+.science23,
+.science24,
+.science25 {
+    width: 330px;
+    margin-top: 15px;
+}
+
+.science21 {
+    margin-top: 20px;
+}
+
+.science2 .intro1,
+.science2 .intro2,
+.science2 .intro3,
+.science2 .intro4,
+.science2 .intro5 {
+    width: 335px;
+    padding: 10px;
+    padding-top: 5px;
+}
+
+.science2 .intro1 a:hover,
+.science2 .intro2 a:hover,
+.science2 .intro3 a:hover,
+.science2 .intro4 a:hover,
+.science2 .intro5 a:hover {
+    color: #64a138;
+}
+
+.news3 {
+    margin-left: 60px;
+    width: 300px;
+}
+
+.news3 .newspic1,
+.news3 .newspic2 {
+    height: 170px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.news3 h5,
+.news4 h5 {
+    margin-bottom: 10px;
+}
+
+.news3 a:hover,
+.news4 a:hover {
+    color: #64a138;
+}
+
+.news4 {
+    margin-left: 10px;
+    width: 300px;
+}
+
+.news4 .newspic3,
+.news4 .newspic4 {
+    height: 170px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.news3 .newspic1 a:hover,
+.news3 .newspic2 a:hover,
+.news4 .newspic3 a:hover,
+.news4 .newspic4 a:hover {
+    box-shadow: rgba(255, 255, 255, 0.5);
+}
+
+.more {
+    height: 70px;
+    width: 1642px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.more .button {
+    font-size: large;
+    color: rgb(120, 123, 123);
+    background-color: #dcdc93;
+    text-align: center;
+    line-height: 50px;
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 740px;
+}
+
+
+
+
+
+
+
+.more2 {
+    box-shadow: 0px 15px 15px 10px rgba(248, 243, 235, 0.5);
+}
+
+.course2 {
+    width: 1642px;
+    height: 560px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.video1,
+.video2,
+.videomore {
+    margin-top: 40px;
+}
+
+.video1,
+.video2 {
+    height: 470px;
+    width: 350px;
+    float: left;
+    margin-left: 80px;
+}
+
+.video1 {
+    padding-top: 20px;
+}
+
+.video1 .videointro1,
+.video2 .videointro2 {
+    height: 120px;
+    width: 350px;
+    padding: 15px;
+    padding-top: 0;
+}
+
+.video1 .videointro1 p,
+.video2 .videointro2 p {
+    font-size: 5px;
+    color: rgb(95, 98, 99)
+}
+
+.video1 .videointro1 a:hover,
+.video2 .videointro2 a:hover {
+    color: #64a138;
+}
+
+.video1 .videopic1 {
+    margin-bottom: 35px;
+}
+
+.video2 .videointro2 {
+    margin-bottom: 15px;
+}
+
+.video2 .videopic2 {
+    background-image: url(images/视频1jpg.jpg);
+    width: 300px;
+    height: 340px;
+    padding-left: 20px;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.video1 .videopic1 {
+    background-image: url(images/视频2.png);
+    height: 226px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.videomore {
+    height: 470px;
+    width: 350px;
+    margin-left: 225px;
+    float: left;
+    background-image: url(images/videomore.png);
+    border-radius: 15px;
+}
+.video1 .intro1,
+.video2 .intro2 {
+    font: normal normal 12px "微软雅黑";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.guidance {
+    width: 1642px;
+    height: 680px;
+    margin-top: 40px;
+}
+
+.guide {
+    height: 480px;
+    width: 1642px;
+    margin-top: 30px;
+}
+
+.guidance h2 {
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(167, 212, 197);
+    width: 220px;
+    height: 70px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.guidance3 {
+    width: 600px;
+    height: 338px;
+    float: left;
+    margin-left: 205px;
+    margin-top: 20px;
+    background-image: url(images/家长课堂.png);
+    border-radius: 15px;
+}
+
+.guidance3 .yinru {
+    text-align: center;
+    margin-top: 348px;
+    color: rgb(115, 148, 165);
+    font: italic bold 15px/25px "幼圆";
+}
+
+.guidance3 .yinru2 {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(115, 148, 165);
+    font: italic bold 15px/25px "幼圆";
+}
+
+.guidance1,
+.guidance2 {
+    margin-top: 20px;
+    height: 420px;
+    float: left;
+    margin-left: 80px;
+    width: 250px;
+}
+
+
+.family,
+.healthy {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 5px;
+    margin-top: 15px;
+    border-top: solid 2px #64a138;
+}
+
+.family p,
+.healthy p {
+    padding-top: 5px;
+}
+
+.family a:hover,
+.healthy a:hover {
+    color: #64a138
+}
+
+.more3 {
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.more4 {
+    background-color: rgba(248, 243, 235, 0.5);
+    box-shadow: 0px 15px 15px 20px rgba(248, 243, 235, 0.5);
+}
+
+.us {
+    width: 1642px;
+    height: 580px;
+    background-color: rgba(248, 243, 235, 0.5);
+    box-shadow: 0px -15px 15px 10px rgba(248, 243, 235, 0.5);
+}
+
+.ustop {
+    width: 1642px;
+    height: 420px;
+}
+
+.us h2 {
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(167, 212, 197);
+    width: 220px;
+    height: 70px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.us .introduction {
+    float: left;
+    height: 380px;
+    width: 500px;
+    margin-left: 235px;
+    margin-top: 50px;
+}
+
+.us .introduction1 {
+    width: 500px;
+    height: 170px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    border: dashed 2px #64a138;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.us .introduction2 {
+    float: left;
+    width: 240px;
+    height: 130px;
+    padding: 20px;
+    padding-top: 10px;
+    border: dashed 2px #64a138;
+    border-bottom-left-radius: 20px;
+}
+
+.us .introduction3 {
+    width: 240px;
+    height: 130px;
+    float: left;
+    margin-left: 20px;
+    padding: 20px;
+    padding-top: 10px;
+    border: dashed 2px #64a138;
+    border-bottom-right-radius: 20px;
+}
+
+.us h1 {
+    font: normal normal 30px "华文行楷";
+    line-height: 40px;
+}
+
+.us h3 {
+    font: normal normal 22px "华文行楷";
+    line-height: 30px;
+}
+
+.neirong {
+    font: normal normal 16px "华文楷体";
+    line-height: 25px;
+}
+
+.knowmore {
+    font: normal normal 14px "华文楷体";
+    line-height: 35px;
+    text-align: end;
+}
+
+.us .picture {
+    float: left;
+    width: 587px;
+    height: 330px;
+    margin-left: 80px;
+    margin-top: 45px;
+    background-image: url(images/关于我们.png);
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 300px;
+    width: 1642px;
+}
+
+.footer .top {
+    padding-top: 25px;
+    height: 200px;
+    border-bottom: 2px solid #64a138;
+}
+
+.footer .logo {
+    float: left;
+    color: #333;
+    margin-left: 350px;
+    width: 180px;
+    height: 150px;
+    padding-top: 38px;
+    padding-left: 75px;
+    margin-right: 100px;
+}
+
+.footer .mid {
+    padding-top: 30px;
+    padding-left: 45px;
+    float: left;
+    color: #333;
+    width: 300px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.footer .icon1 {
+    padding-top: 58px;
+    padding-left: 58px;
+    float: left;
+    color: #333;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.footer .icon2 {
+    padding-top: 58px;
+    padding-left: 58px;
+    float: left;
+    color: #333;
+    width: 150px;
+    height: 150px;
+}
+
+.footer .top li .icon a {
+    float: left;
+    margin-right: 30px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url();
+    background-size: contain;
+}
+
+.footer .bottom {
+    padding-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+.footr .bottom a {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer .bottom p {
+    margin-bottom: 15px;
+}
