@@ -1,71 +1,72 @@
-身体，
+body,
 h1,
-小时2,
-小时3，
-小时4,
-小时5,
-小时6,
+h2,
+h3,
+h4,
+h5,
+h6,
 p,
-乌尔，
-哦，
-李，
-DL,
-德特，
-DD，
-输入{
-    保证金：0；
-    填充：0；
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
 }
 
-身体{
-    字体：16 px / 1.5  "Helvetica Neue"、Helvetica、Arial、"Microsoft Yahei"、
-        “Hiragino Sans GB”、“黑体 SC”、“文泉驿微黑”、无衬线体；
-    颜色：#333；
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
+        "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    margin: 0 auto;
 }
 
 * {
-    框大小： 未知框；
+    box-sizing: border-box;
 }
 
-乌尔，
-奥尔{
-    列表样式：无；
+ul,
+ol {
+    list-style: none;
 }
 
-嗯，
-我{
-    字体样式：正常；
+em,
+i {
+    font-style: normal;
 }
 
-A {
-    文本装饰：无；
-    颜色：#333；
+a {
+    text-decoration: none;
+    color:#333;
 }
 
-图片{
-    垂直对齐：中间；
+img {
+    vertical-align: middle;
 }
 
-输入{
-    认识：无；
-    概要：无；
-    颜色：#333；
+input {
+    border: none;
+    outline: none;
+    color: #333;
 }
 
 .fl {
-    向左浮浮；​
+    float: left;
 }
 
 .fr {
-    浮动：右；
+    float: right;
 }
 
-.clearfix::之前，
-.clearfix::之后 {
-    内容：”” ;
-    显示：表；
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
 }
 
-.clearfix::之后 {
-    明确：两者都有；
+.clearfix::after {
+    clear: both;
 }
