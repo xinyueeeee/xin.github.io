@@ -81,7 +81,7 @@
 .banner {
     height: 500px;
     width: 1642px;
-    background-color: rgb(130,207,126);
+    background-color: rgb(130, 207, 126);
     padding-left: 380px;
 }
 
@@ -102,9 +102,202 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+.family {
+    width: 1642px;
+    height: 150px;
+    text-align: center;
+    font: normal normal 50px/80px "幼圆";
+    padding-top: 30px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.question1,
+.question2 {
+    width: 1642px;
+    height: 60px;
+    text-align: center;
+    font: normal bold 30px/40px "华文楷体";
+    background-color: rgba(248, 243, 235, 0.5);
+    color: #64a138;
+}
+
+.answera {
+    width: 1642px;
+    height: 450px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.answera .answer1,
+.answera .answer2,
+.answera .answer3 {
+    float: left;
+    width: 370px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+.answera .answer1 {
+    margin-left: 210px;
+}
+
+.answera .answer1 .main,
+.answera .answer2 .main,
+.answera .answer3 .main {
+    width: 370px;
+    height: 80px;
+    font: normal bold 22px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answera .answer1 .intro,
+.answera .answer2 .intro,
+.answera .answer3 .intro {
+    width: 370px;
+    height: 320px;
+    padding: 10px;
+    font: normal normal 16px/20px "华文楷体";
+}
+
+.answerb {
+    width: 1642px;
+    height: 350px;
+    background-color: rgba(248, 243, 235, 0.5);
+    box-shadow: 0px 15px 15px 10px rgba(248, 243, 235, 0.5);
+}
+
+.answerb .answer1,
+.answerb .answer2,
+.answerb .answer3 {
+    float: left;
+    width: 370px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.answerb .answer1 {
+    margin-left: 210px;
+}
+
+.answerb .answer1 .main,
+.answerb .answer2 .main,
+.answerb .answer3 .main {
+    width: 370px;
+    height: 50px;
+    font: normal bold 22px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answerb .answer1 .intro,
+.answerb .answer2 .intro,
+.answerb .answer3 .intro {
+    width: 370px;
+    height: 220px;
+    padding: 10px;
+    font: normal normal 16px/20px "华文楷体";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.healthy {
+    width: 1642px;
+    height: 150px;
+    text-align: center;
+    font: normal normal 50px/80px "幼圆";
+    padding-top: 30px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.question3 {
+    width: 1642px;
+    height: 60px;
+    text-align: center;
+    font: normal bold 30px/40px "华文楷体";
+    background-color: #fff;
+    color: #64a138;
+}
+
+.answerc {
+    width: 1642px;
+    height: 450px;
+    background-color: #fff;
+}
+
+.answerc .answer1,
+.answerc .answer2 {
+    float: left;
+    width: 430px;
+    height: 300px;
+    margin-left: 100px;
+}
+
+.answerc .answer1 {
+    margin-left: 340px;
+}
+
+.answerc .answer1 .main,
+.answerc .answer2 .main {
+    width: 430px;
+    height: 80px;
+    font: normal bold 22px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answerc .answer1 .intro,
+.answerc .answer2 .intro {
+    width: 430px;
+    height: 220px;
+    padding: 10px;
+    font: normal normal 16px/20px "华文楷体";
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .footer {
     height: 300px;
     width: 1642px;
+    background-color: rgba(248, 243, 235, 0.5);
+    box-shadow: 0px -15px 15px 10px rgba(248, 243, 235, 0.5);
 }
 
 .footer .top {
