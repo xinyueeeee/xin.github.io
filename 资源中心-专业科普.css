@@ -335,19 +335,19 @@
 .answere .answer2,
 .answere .answer3 {
     float: left;
-    width: 350px;
+    width: 380px;
     height: 300px;
     margin-left: 40px;
 }
 
 .answere .answer1 {
-    margin-left: 125px;
+    margin-left: 80px;
 }
 
 .answere .answer1 .main,
 .answere .answer2 .main,
 .answere .answer3 .main {
-    width: 350px;
+    width: 380px;
     height: 80px;
     font: normal bold 24px/30px "华文楷体";
     padding: 10px;
@@ -357,7 +357,7 @@
 .answere .answer1 .intro,
 .answere .answer2 .intro,
 .answere .answer3 .intro {
-    width: 350px;
+    width: 380px;
     height: 220px;
     padding: 10px;
     font: normal normal 18px/20px "华文楷体";
@@ -373,18 +373,18 @@
 .answerf .answer1,
 .answerf .answer2 {
     float: left;
-    width: 400px;
+    width: 450px;
     height: 370px;
     margin-left: 70px;
 }
 
 .answerf .answer1 {
-    margin-left: 255px;
+    margin-left: 200px;
 }
 
 .answerf .answer1 .main,
 .answerf .answer2 .main {
-    width: 400px;
+    width: 450px;
     height: 80px;
     font: normal bold 24px/30px "华文楷体";
     padding: 10px;
@@ -393,7 +393,7 @@
 
 .answerf .answer1 .intro,
 .answerf .answer2 .intro {
-    width: 400px;
+    width: 450px;
     height: 290px;
     padding: 10px;
     font: normal normal 18px/20px "华文楷体";
