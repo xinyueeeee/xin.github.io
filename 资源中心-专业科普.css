@@ -1,0 +1,500 @@
+.header {
+    margin: 0, auto;
+    height: 80px;
+    width: 1642px;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.header .logo {
+    float: left;
+    width: 180px;
+    height: 80px;
+    padding-left: 70px;
+    padding-top: 5px;
+    margin-left: 180px;
+}
+
+.daohanglan {
+    float: left;
+    height: 80px;
+    width: 980px;
+}
+
+.daohanglan ul {
+    margin-left: 30px;
+}
+
+.daohanglan li {
+    float: left;
+    margin-left: 60px;
+    line-height: 80px;
+}
+
+.daohanglan li a {
+    padding-bottom: 29px;
+}
+
+.daohanglan li a:hover {
+    color: #64a138;
+    border-bottom: 3px solid #64a138;
+}
+
+.daohanglan .ziyuan {
+    border-bottom: 3px solid #64a138;
+    color: #64a138;
+}
+
+.search {
+    position: relative;
+    margin-top: 25px;
+    float: left;
+    width: 175px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    width: 172px;
+    height: 28px;
+    padding-left: 30px;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.search span {
+    position: absolute;
+    left: 2px;
+    right: 0;
+    top: 3px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(images/sprites.png);
+    background-position: -79px -69px;
+}
+
+
+
+.banner {
+    height: 500px;
+    width: 1642px;
+    background-color: rgb(167, 212, 197);
+    padding-left: 420px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.w {
+    width:1642px;
+    height:2424px;
+    background-color: rgba(248, 243, 235, 0.5);
+    box-shadow: 0px 15px 15px 10px rgba(248, 243, 235, 0.5);
+}
+
+
+.cedaohang {
+    float: left;
+    width: 200px;
+    height: 784px;
+    padding-top: 55px;
+}
+
+.cedaohang li {
+    width: 200px;
+    height: 80px;
+    padding-left: 65px;
+    line-height: 80px;
+    font-size: larger;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: #dcdc93;
+    margin-top: 15px;
+}
+
+.cedaohang .first {
+    background-color: rgb(167, 212, 197);
+}
+
+.cedaohang a:hover {
+    color: #64A138;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.source {
+    float: left;
+    height: 2384px;
+    width: 1442px;
+    padding-left: 30px;
+}
+
+.source .question1 {
+    width: 1380px;
+    height: 480px;
+    margin-top: 55px;
+}
+
+.question1 .question11,
+.question1 .question12 {
+    float: left;
+    height: 450px;
+    width: 680px;
+    margin-left: 5px;
+}
+
+.question1 .question11 .main,
+.question1 .question12 .main {
+    float: left;
+    width: 680px;
+    height: 80px;
+    font: bold normal 30px/80px "华文楷体";
+    color: #64A138;
+    text-align: center;
+}
+
+.answera,
+.answerb {
+    width: 680px;
+    height: 370px;
+    margin-top: 80px;
+}
+
+.answera .answer1,
+.answera .answer2,
+.answera .answer3 {
+    width: 600px;
+    margin-left: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    border: dotted 2px #64a138;
+    border-radius: 10px;
+    font: normal normal 18px/22px "华文楷体";
+}
+
+.answerb .answer1,
+.answerb .answer2 {
+    float: left;
+    width: 300px;
+    padding: 10px;
+    border: dotted 2px #64a138;
+    border-radius: 10px;
+    font: normal normal 18px/22px "华文楷体";
+}
+
+.answerb .answer1 {
+    margin-left: 40px;
+}
+
+.answerb .answer2 {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.source .question3,
+.source .question4,
+.source .question5 {
+    width: 1380px;
+    height: 80px;
+    font: bold normal 30px/80px "华文楷体";
+    color: #64A138;
+    text-align: center;
+    margin-top: 55px;
+}
+.answerc {
+    width: 1380px;
+    height: 300px;
+}
+
+.answerc .answer1,
+.answerc .answer2,
+.answerc .answer3 {
+    float: left;
+    width: 350px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+.answerc .answer1 {
+    margin-left: 125px;
+}
+
+.answerc .answer1 .main,
+.answerc .answer2 .main,
+.answerc .answer3 .main {
+    width: 350px;
+    height: 50px;
+    font: normal bold 24px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answerc .answer1 .intro,
+.answerc .answer2 .intro,
+.answerc .answer3 .intro {
+    width: 350px;
+    height: 320px;
+    padding: 10px;
+    font: normal normal 18px/20px "华文楷体";
+}
+
+
+
+
+.a {
+    width:1380px;
+    height: 60px;
+    font: normal normal 18px/40px "华文楷体";
+    text-align: center;
+}
+
+.answerd {
+    width: 1380px;
+    height: 430px;
+}
+
+.answerd .answer1,
+.answerd .answer2,
+.answerd .answer3 {
+    float: left;
+    width: 350px;
+    height: 370px;
+    margin-left: 40px;
+}
+
+.answerd .answer1 {
+    margin-left: 125px;
+}
+
+.answerd .answer1 .main,
+.answerd .answer2 .main,
+.answerd .answer3 .main {
+    width: 350px;
+    height: 50px;
+    font: normal bold 24px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answerd .answer1 .intro,
+.answerd .answer2 .intro,
+.answerd .answer3 .intro {
+    width: 350px;
+    height: 320px;
+    padding: 10px;
+    font: normal normal 18px/20px "华文楷体";
+}
+
+
+
+
+.answere {
+    width: 1380px;
+    height: 330px;
+}
+
+.answere .answer1,
+.answere .answer2,
+.answere .answer3 {
+    float: left;
+    width: 350px;
+    height: 300px;
+    margin-left: 40px;
+}
+
+.answere .answer1 {
+    margin-left: 125px;
+}
+
+.answere .answer1 .main,
+.answere .answer2 .main,
+.answere .answer3 .main {
+    width: 350px;
+    height: 80px;
+    font: normal bold 24px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answere .answer1 .intro,
+.answere .answer2 .intro,
+.answere .answer3 .intro {
+    width: 350px;
+    height: 220px;
+    padding: 10px;
+    font: normal normal 18px/20px "华文楷体";
+}
+
+
+
+.answerf {
+    width: 1380px;
+    height: 420px;
+}
+
+.answerf .answer1,
+.answerf .answer2 {
+    float: left;
+    width: 400px;
+    height: 370px;
+    margin-left: 70px;
+}
+
+.answerf .answer1 {
+    margin-left: 255px;
+}
+
+.answerf .answer1 .main,
+.answerf .answer2 .main {
+    width: 400px;
+    height: 80px;
+    font: normal bold 24px/30px "华文楷体";
+    padding: 10px;
+    border-bottom: solid 2px #64a138;
+}
+
+.answerf .answer1 .intro,
+.answerf .answer2 .intro {
+    width: 400px;
+    height: 290px;
+    padding: 10px;
+    font: normal normal 18px/20px "华文楷体";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 300px;
+    width: 1642px;
+}
+
+.footer .top {
+    padding-top: 25px;
+    height: 200px;
+    border-bottom: 2px solid #64a138;
+}
+
+.footer .logo {
+    float: left;
+    color: #333;
+    margin-left: 350px;
+    width: 180px;
+    height: 150px;
+    padding-top: 38px;
+    padding-left: 75px;
+    margin-right: 100px;
+}
+
+.footer .mid {
+    padding-top: 30px;
+    padding-left: 45px;
+    float: left;
+    color: #333;
+    width: 300px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.footer .icon1 {
+    padding-top: 58px;
+    padding-left: 58px;
+    float: left;
+    color: #333;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.footer .icon2 {
+    padding-top: 58px;
+    padding-left: 58px;
+    float: left;
+    color: #333;
+    width: 150px;
+    height: 150px;
+}
+
+.footer .top li .icon a {
+    float: left;
+    margin-right: 30px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url();
+    background-size: contain;
+}
+
+.footer .bottom {
+    padding-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+.footr .bottom a {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer .bottom p {
+    margin-bottom: 15px;
+}
