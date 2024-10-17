@@ -44,7 +44,7 @@
     border-bottom: 3px solid #64a138;
 }
 
-.daohanglan .ziyuan {
+.daohanglan .shouye {
     border-bottom: 3px solid #64a138;
     color: #64a138;
 }
@@ -81,14 +81,11 @@
     background-position: -79px -69px;
 }
 
-
-
 .banner {
     position: relative;
-    height: 500px;
     width: 1642px;
-    background-color: rgb(167, 212, 197);
-    padding-left: 400px;
+    background-color: rgb(236, 248, 229);
+    padding-left: 380px;
 }
 
 .sourcemore {
@@ -117,106 +114,88 @@
 
 
 
-.w {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.response {
     width: 1642px;
-    height: 700px;
+    height: 650px;
     background-color: rgba(248, 243, 235, 0.5);
+    padding: 30px;
     box-shadow: 0px 15px 15px 10px rgba(248, 243, 235, 0.5);
 }
 
-.cedaohang {
+.information {
+    width: 1100px;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+.pic {
+    width: 300px;
     float: left;
-    width: 200px;
-    height: 600px;
-    margin-top: 95px;
+    margin: auto 40px;
+    margin-top: 20px;
 }
 
-.cedaohang li {
-    width: 200px;
-    height: 80px;
-    padding-left: 65px;
-    line-height: 80px;
-    font-size: larger;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-color: #dcdc93;
-    margin-top: 15px;
+.information table {
+    width: 600px;
+    height: 400px;
 }
 
-.cedaohang .first {
-    background-color: rgb(167, 212, 197);
+.title {
+    font-size: large;
+    text-align: right;
+    padding-right: 40px;
 }
 
-.cedaohang a:hover {
-    color: #64A138;
-}
-
-.source {
-    float: left;
-    height: 700px;
-    width: 1380px;
-}
-
-.fenlei {
-    height: 80px;
-    width: 1300px;
-    margin-left: 50px;
-    padding-top: 45px;
-    padding-left: 20px;
-}
-
-.fenlei li {
-    float: left;
-    margin-right: 30px;
-    font-size: 20px;
-    color: #333;
-}
-
-.fenlei a:hover {
-    background-color: rgb(167, 212, 197);
-    border-radius: 10px;
-}
-
-.fenlei .first {
-    background-color: rgb(167, 212, 197);
-    border-radius: 10px;
-}
-
-.source1 {
-    width: 1300px;
-    height: 700px;
-    margin-top: 30px;
-    margin-left: 70px;
-}
-
-.source1 h5 {
+.information input,
+.information select,
+.information textarea {
+    width: 400px;
     height: 40px;
-    font: bold normal 25px/35px "华文楷体";
-    color: #64A138;
-    border-bottom: solid 2px #64A138;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
 }
 
-.v1 h5 {
-    width: 670px;
+.information textarea {
+    height: 100px;
 }
 
 
-.source1 h6 {
+.submit {
+    width: 150px;
     height: 40px;
-    font: normal normal 14px/40px "华文楷体";
-    color: #929191;
+    margin: 20px 560px 15px 560px;
+    background-color: rgb(97, 157, 54, .4);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
 }
 
-.source1 .intro {
-    font: normal normal 18px/24px "华文楷体";
-    margin-bottom: 50px;
+.submit:hover {
+    background-color: rgb(100, 161, 56, .7);
 }
-
-
-
-
-
-
 
 
 

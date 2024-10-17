@@ -1,3 +1,8 @@
+.all {
+    width: 1642px;
+    margin: auto;
+}
+
 .header {
     margin: 0, auto;
     height: 80px;
@@ -89,12 +94,33 @@
 
 
 .banner {
+    position: relative;
     height: 500px;
     width: 1642px;
     background-color: rgb(167, 212, 197);
     padding-left: 400px;
 }
 
+.sourcemore {
+    position: absolute;
+    left: 650px;
+    z-index: 1;
+    background-color: rgba(248, 243, 235, 0.9);
+    width: 100px;
+}
+
+.sourcemore li {
+    text-align: center;
+    margin: 10px;
+}
+
+.sourcemore li a:hover {
+    color: #64a138;
+}
+
+.sourcemore:hover {
+    display: block;
+}
 
 
 
@@ -270,23 +296,12 @@
     margin-right: 100px;
 }
 
-.footer .icon1 {
-    padding-top: 58px;
-    padding-left: 58px;
+.footer .icon {
     float: left;
-    color: #333;
     margin-right: 20px;
-    width: 150px;
-    height: 150px;
-}
-
-.footer .icon2 {
-    padding-top: 58px;
-    padding-left: 58px;
-    float: left;
-    color: #333;
-    width: 150px;
-    height: 150px;
+    margin-top: 25px;
+    width: 110px;
+    height: 110px;
 }
 
 .footer .top li .icon a {

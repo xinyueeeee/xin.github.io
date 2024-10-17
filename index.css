@@ -1,6 +1,8 @@
-.w {
-    margin: 0, auto;
+.all {
+    width: 1642px;
+    margin: auto;
 }
+
 .header {
     margin: 0, auto;
     height: 80px;
@@ -93,15 +95,34 @@
 
 
 
-
-
-
-
-
 .banner {
+    position: relative;
     height: 500px;
     width: 1642px;
 }
+
+
+.sourcemore {
+    position: absolute;
+    left: 650px;
+    z-index: 1;
+    background-color: rgba(248, 243, 235, 0.9);
+    width: 100px;
+}
+
+.sourcemore li {
+    text-align: center;
+    margin: 10px;
+}
+
+.sourcemore li a:hover {
+    color: #64a138;
+}
+
+.sourcemore:hover {
+    display: block;
+}
+
 
 .banner .body {
     display: flex;
@@ -188,6 +209,9 @@
 .banner .button-right {
     background-position: -22px -60px;
 }
+
+
+
 
 
 
@@ -449,6 +473,7 @@
     background-image: url(images/videomore.png);
     border-radius: 15px;
 }
+
 .video1 .intro1,
 .video2 .intro2 {
     font: normal normal 12px "微软雅黑";
@@ -611,7 +636,6 @@
 .us .introduction2 {
     float: left;
     width: 240px;
-    height: 130px;
     padding: 20px;
     padding-top: 10px;
     border: dashed 2px #64a138;
@@ -620,7 +644,6 @@
 
 .us .introduction3 {
     width: 240px;
-    height: 130px;
     float: left;
     margin-left: 20px;
     padding: 20px;
@@ -648,6 +671,10 @@
     font: normal normal 14px "华文楷体";
     line-height: 35px;
     text-align: end;
+}
+
+.knowmore:hover {
+    color: rgb(100, 161, 56);
 }
 
 .us .picture {
@@ -705,23 +732,12 @@
     margin-right: 100px;
 }
 
-.footer .icon1 {
-    padding-top: 58px;
-    padding-left: 58px;
+.footer .icon {
     float: left;
-    color: #333;
     margin-right: 20px;
-    width: 150px;
-    height: 150px;
-}
-
-.footer .icon2 {
-    padding-top: 58px;
-    padding-left: 58px;
-    float: left;
-    color: #333;
-    width: 150px;
-    height: 150px;
+    margin-top: 25px;
+    width: 110px;
+    height: 110px;
 }
 
 .footer .top li .icon a {

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ai助手</title>
+    <link rel="stylesheet" href="问答.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="qa">
+            <div v-for="(item,index) in records" :key="index">
+                <div class='ai' v-if='index%2 == 0'>{{item}}</div>
+                <div class='user' v-else-if='index%2 == 1'>{{item}}</div>
+            </div>
+        </div>
+        <div class="input">
+            <button class="recommend recommend1" @click="gosend(r1)">{{r1}}</button>
+            <button class="recommend" @click="gosend(r2)">{{r2}}</button>
+            <button class="recommend" @click="gosend(r3)">{{r3}}</button>
+            <textarea class="send-content" @keyup-enter="gosend(nowq)" v-model="nowq"></textarea>
+            <button class="send" @click="gosend(nowq)"><img src="images/send.png" class='sendpic'></button>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            records: [
+                '你好，有什么我可以帮助你的吗？',
+            ],
+            nowq: '',
+            nowa: '',
+            r1: "学习障碍的定义",
+            r2: "常见的学习障碍类型",
+            r3: "学习障碍儿童有哪些早期迹象"
+        },
+        methods: {
+            gosend(e) {
+                console.log(e);
+                const Records = this.records;
+                Records.push(e);
+                this.records = Records;
+                this.nowq = e;
+                console.log(this.records)
+                console.log(this.nowq)
+                this.getToken()
+            },
+            getToken() {
+                const url_token = "https://aip.baidubce.com/oauth/2.0/token?client_id=NebVq1H0uxmxB1gJHfkBx6mR&client_secret=WfrvYKcFHvWJLZEsfwi4hZxKB6gZLNAs&grant_type=client_credentials";
+                const that = this;
+                axios({
+                    url: url_token,
+                    method: 'POST',
+                    header: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json',
+                    },
+                })
+                    .then(response => {
+                        console.log(response.data);
+                        const access_token = response.data;
+                        const url_chat = "https://aip.baidubce.com/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/ernie-tiny-8k?access_token=" + access_token
+
+                        const payload = {
+                            "messages": [
+                                {
+                                    "role": "user",
+                                    "content": this.nowq
+                                }
+                            ]
+                        };
+
+                        axios({
+                            url: url_chat,
+                            method: "POST",
+                            data: payload,
+                            header: {
+                                'Content-Type': 'application/json'
+                            },
+                        })
+                            .then(response => {
+                                console.log(response.data);
+                                const Records = that.records
+                                Records.push(response.data)
+
+
+                            })
+                            .catch(error => {
+                                throw new Error(error);
+                            })
+                    })
+                    .catch(error => {
+                        throw new Error(error);
+                    })
+
+            },
+        }
+    })
+</script>
+
+</html>

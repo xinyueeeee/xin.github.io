@@ -1,3 +1,8 @@
+.all {
+    width: 1642px;
+    margin: auto;
+}
+
 .header {
     margin: 0, auto;
     height: 80px;
@@ -79,12 +84,33 @@
 
 
 .banner {
+    position: relative;
     height: 500px;
     width: 1642px;
     background-color: rgb(167, 212, 197);
     padding-left: 400px;
 }
 
+.sourcemore {
+    position: absolute;
+    left: 650px;
+    z-index: 1;
+    background-color: rgba(248, 243, 235, 0.9);
+    width: 100px;
+}
+
+.sourcemore li {
+    text-align: center;
+    margin: 10px;
+}
+
+.sourcemore li a:hover {
+    color: #64a138;
+}
+
+.sourcemore:hover {
+    display: block;
+}
 
 
 
@@ -155,28 +181,34 @@
     background-color: rgb(167, 212, 197);
     border-radius: 10px;
 }
+
 .source1 {
     width: 1300px;
     height: 700px;
     margin-top: 30px;
     margin-left: 70px;
 }
+
 .source1 h5 {
     height: 40px;
-    font:bold normal 25px/35px "华文楷体";
+    font: bold normal 25px/35px "华文楷体";
     color: #64A138;
     border-bottom: solid 2px #64A138;
 }
+
 .v1 h5 {
-    width:600px;
+    width: 600px;
 }
+
 .v2 h5 {
     width: 650px;
 }
+
 .source1 h6 {
     height: 40px;
     font: bold normal 22px/40px "华文楷体";
 }
+
 .source1 .intro {
     font: normal normal 18px/24px "华文楷体";
     margin-bottom: 50px;
@@ -232,23 +264,12 @@
     margin-right: 100px;
 }
 
-.footer .icon1 {
-    padding-top: 58px;
-    padding-left: 58px;
+.footer .icon {
     float: left;
-    color: #333;
     margin-right: 20px;
-    width: 150px;
-    height: 150px;
-}
-
-.footer .icon2 {
-    padding-top: 58px;
-    padding-left: 58px;
-    float: left;
-    color: #333;
-    width: 150px;
-    height: 150px;
+    margin-top: 25px;
+    width: 110px;
+    height: 110px;
 }
 
 .footer .top li .icon a {
