@@ -1,0 +1,265 @@
+.all {
+    width: 1655px;
+    margin: auto;
+}
+
+.header {
+    margin: 0, auto;
+    height: 100px;
+    width: 1655px;
+    background-color: rgb(255, 250, 244);
+    position: fixed;
+    top: 0;
+    left: auto;
+    z-index: 999;
+}
+
+.header .logo {
+    float: left;
+    width: 150px;
+    height: 100px;
+    padding-top: 15px;
+    margin-left: 10%;
+}
+
+.daohanglan {
+    float: left;
+    height: 100px;
+    width: 960px;
+}
+
+.daohanglan ul {
+    margin-left: 20px;
+}
+
+.daohanglan li {
+    float: left;
+    margin-left: 5%;
+    line-height: 100px;
+    font-size: larger;
+}
+
+.daohanglan li a {
+    padding-bottom: 30px;
+}
+
+.daohanglan li a:hover {
+    color: #64a138;
+    border-bottom: 3px solid #64a138;
+    font-weight: 700;
+}
+
+.daohanglan .shouye {
+    border-bottom: 3px solid #64a138;
+    color: #64a138;
+    font-weight: 700;
+}
+
+.search {
+    position: relative;
+    margin-top: 35px;
+    margin-left: -10px;
+    float: left;
+    width: 10%;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    width: 172px;
+    height: 28px;
+    padding-left: 30px;
+}
+
+.search input::placeholder {
+    font-size: 14px;
+    color: #dcdcdc;
+}
+
+.search span {
+    position: absolute;
+    left: 2px;
+    right: 0;
+    top: 3px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(images/sprites.png);
+    background-position: -79px -69px;
+}
+
+.login {
+    float: left;
+    line-height: 100px;
+    font-size: larger;
+    margin-left: 60px;
+}
+
+.login a:hover {
+    color: #64a138;
+    font-weight: 700;
+}
+
+
+
+
+
+.banner {
+    position: relative;
+    padding-left: 200px;
+    padding-top: 30px;
+    height: 450px;
+    width: 1655px;
+    background-color: #dae6cf;
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+.explain {
+    width: 1655px;
+    height: 800px;
+    background-color: rgba(248, 243, 235, 0.5);
+    box-shadow: 0px 15px 15px 10px rgba(248, 243, 235, 0.5);
+}
+
+.top {
+    width: 1655px;
+    height: 700px;
+}
+
+.pic {
+    width: 400px;
+    height: 570px;
+    margin-left: 200px;
+    float: left;
+    margin-top: 90px;
+    border-radius: 30px;
+    background-image: url(images/筛选诊断左侧.png);
+}
+
+.notice {
+    width: 800px;
+    height: 650px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.notice h2 {
+    padding-top: 50px;
+    text-align: center;
+    font: bold normal 40px/70px "华文楷体";
+}
+
+.notice .attendtion {
+    color: #64A138;
+    font: bold normal 23px/50px "华文楷体";
+    text-align: center;
+    padding-top: 10px;
+}
+
+.notice .bianhao {
+    font: normal 600 25px/40px "华文楷体";
+    float: left;
+}
+
+.notice .shuoming {
+    font: normal normal 20px/40px "华文楷体";
+}
+
+.button {
+    background-color: rgb(167, 212, 197);
+    width: 150px;
+    height: 50px;
+    margin-left: 1270px;
+    border-radius: 15px;
+    text-align: center;
+    font: bold normal 24px/50px "华文楷体";
+}
+
+.button a:hover {
+    color: #64A138;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    height: 300px;
+    width: 1655px;
+}
+
+.footer .top {
+    padding-top: 25px;
+    height: 200px;
+    border-bottom: 2px solid #64a138;
+}
+
+.footer .logo {
+    float: left;
+    color: #333;
+    margin-left: 350px;
+    width: 180px;
+    height: 150px;
+    padding-top: 38px;
+    padding-left: 75px;
+    margin-right: 100px;
+}
+
+.footer .mid {
+    padding-top: 30px;
+    padding-left: 45px;
+    float: left;
+    color: #333;
+    width: 300px;
+    height: 150px;
+    margin-right: 100px;
+}
+
+.footer .icon {
+    float: left;
+    margin-right: 20px;
+    margin-top: 25px;
+    width: 110px;
+    height: 110px;
+}
+
+.footer .top li .icon a {
+    float: left;
+    margin-right: 30px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url();
+    background-size: contain;
+}
+
+.footer .bottom {
+    padding-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #333;
+}
+
+.footr .bottom a {
+    font-size: 14px;
+    color: #333;
+}
+
+.footer .bottom p {
+    margin-bottom: 15px;
+}

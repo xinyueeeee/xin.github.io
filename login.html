@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录/注册</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="base.css" />
+</head>
+
+<body>
+    <div class="all" id="app">
+        <div></div>
+        <div class="welcome">
+            <div style="font-size:50px; padding-top: 50px;">欢迎进入</div>
+            <div style="font-size:40px;">智启无碍平台</div>
+        </div>
+
+        <div class='logining' :style="{display: logining}">
+            <div class='lorr'>
+                <div class='l' @click="loginpage">登录</div>
+                <div class='r' @click="registerpage">注册</div>
+            </div>
+            <form class="l_information">
+                <div class="account">账号（手机号）</div>
+                <input name="account" type='text' maxlength="11" placeholder="请输入手机号码" v-model="account"
+                    pattern="^1[3-9]\d{9}$" title="手机号格式不正确"></input>
+                <div class="password">密码</div>
+                <input name="password" type="password" password="true" placeholder="请输入密码" v-model="password"></input>
+                <button class="btn" @click="login">登录</button>
+            </form>
+        </div>
+
+
+        <div class='registering' :style="{display: registering}">
+            <div class='lorr'>
+                <div class='l' @click="loginpage">登录</div>
+                <div class='r' @click="registerpage">注册</div>
+            </div>
+            <form class="z_information">
+                <div class="nickname">昵称</div>
+                <input name="nickname" type="text" placeholder="请输入昵称" v-model="nickname"></input>
+                <div class="phone">账号（手机号）</div>
+                <input name="phone" type='text' maxlength="11" placeholder="请输入手机号码" v-model="phone"
+                    pattern="^1[3-9]\d{9}$" title="手机号格式不正确"></input>
+                <div class="password1">密码</div>
+                <input name="password1" type="password" password="true" placeholder="请输入密码" v-model="password1"></input>
+                <div class="password2">再次确认密码</div>
+                <input name="password2" type="password" password="true" placeholder="请再次输入密码"
+                    v-model="password2"></input>
+                <button class="btn" @click="register">注册</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.7.16/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            logining: 'block',
+            registering: 'none',
+            account: '',
+            password: '',
+            password1: '',
+            password2: '',
+            nickname: '',
+            phone: ''
+        },
+        //生命周期，获取数据
+        created() {
+
+        },
+        methods: {
+            //登录页面
+            loginpage() {
+                this.logining = 'block';
+                this.registering = 'none';
+            },
+            //注册页面
+            registerpage() {
+                this.logining = 'none';
+                this.registering = 'block';
+            },
+            //提交登录信息
+            login() {
+                if (this.account == '' || this.account.trim() == '') {
+                    alert('未填写账号');
+                    return;
+                }
+                if (this.password == '' || this.password.trim() == '') {
+                    alert('未填写密码');
+                    return;
+                }
+                const regex = /^1[3-9]\d{9}$/;
+                if (!regex.test(this.account)) {
+                    alert('账号（手机号）格式不正确');
+                    return;
+                }
+                event.preventDefault();
+                console.log(this.account);
+                console.log(this.password);
+
+                //普通用户
+                const formData = new FormData();
+                formData.append('account', this.account);
+                formData.append('password', this.password);
+                //发送请求
+
+
+
+
+
+
+
+
+
+
+                window.location.href = "index.html";
+                window.islogin = true;
+                //window.userid = ;
+            },
+
+
+
+
+            //提交注册信息
+            register() {
+                if (this.nickname == '' || this.nickname.trim() == '') {
+                    alert('未填写昵称');
+                    return;
+                }
+                if (this.phone == '' || this.phone.trim() == '') {
+                    alert('未填写账号（手机号）');
+                    return;
+                }
+                if (this.password1 == '' || this.password1.trim() == '') {
+                    alert('未填写密码');
+                    return;
+                }
+                if (this.password2 == '' || this.password2.trim() == '') {
+                    alert('未确认密码');
+                    return;
+                }
+                const regex1 = /^1[3-9]\d{9}$/;
+                if (!regex1.test(this.phone)) {
+                    alert('账号（手机号）格式不正确');
+                    return;
+                }
+                if (this.password1 != this.password2) {
+                    alert('密码输入不一致，请重新确认密码');
+                    return;
+                }
+                event.preventDefault();
+                console.log(this.nickname);
+                console.log(this.phone);
+                console.log(this.password1);
+                console.log(this.password2);
+
+                //普通用户
+                const formData = new FormData();
+                formData.append('user_name', this.nickname);
+                formData.append('user_card_id', this.card_id);
+                formData.append('user_phone', this.phone);
+                formData.append('password', this.password1);
+
+                //发送请求
+                fetch('http://localhost:8080/user/register', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.code == 0) {
+                            this.logining = 'block';
+                            this.registering = 'none';
+                            alert('注册成功，请登录')
+                        }
+                        else {
+                            alert(data.msg);
+                        }
+                    })
+                    .catch((error) => {
+                        console.error('Error:', error);
+                    })
+            },
+        }
+    });
+</script>
+
+
+</html>

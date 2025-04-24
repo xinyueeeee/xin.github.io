@@ -1,0 +1,103 @@
+/* pages/ai/ai.wxss */
+body {
+    background-color: #f7f5f0;
+}
+
+page {
+    position: relative;
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.qa {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 110px;
+    padding: 4%;
+}
+
+.ai,
+.user {
+    display: inline-block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-bottom: 4%;
+}
+
+.ai {
+    clear: both;
+    padding-left: 4%;
+    padding-right: 2%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(167, 212, 197, .4);
+}
+
+.user {
+    float: right;
+    padding-left: 2%;
+    padding-right: 4%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(235, 219, 198, .8);
+    margin-left: 10%;
+}
+
+.input {
+    position: fixed;
+    bottom: 3%;
+    left: 15%;
+    width: 70%;
+}
+
+.send-content {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 15px;
+    height: 80px;
+    overflow-y: auto;
+    border: #fff;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .2);
+    border-radius: 10px;
+}
+
+.recommend {
+    float: left;
+    margin: 5px;
+    font-size: small;
+    color: #888;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, .2);
+    padding: 5px 10px;
+    border: #fff;
+}
+
+.recommend:hover {
+    background-color: rgb(228, 226, 226);
+}
+
+.send {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(235, 219, 198, .5);
+}
+
+.send:hover {
+    background-color: rgb(235, 219, 198, .8);
+}
+
+.sendpic {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}

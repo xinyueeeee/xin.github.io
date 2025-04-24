@@ -1,0 +1,173 @@
+.all {
+    min-width: 800px;
+    height: 100%;
+    min-height: 750px;
+}
+
+body {
+    background-color: rgba(248, 243, 235, 0.5);
+}
+
+.welcome {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.welcome div {
+    font-weight: 600;
+    color: #3D3D3D;
+    padding: 10px 0px;
+}
+
+
+.logining {
+    margin: 50px auto;
+    padding: 30px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(218, 230, 207);
+    box-shadow: 20px 20px rgb(218, 230, 207, 0.43);
+}
+
+.logining .lorr {
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.logining .l,
+.logining .r {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 5px #fff solid;
+}
+
+.logining .r {
+    color: #F6F6F6;
+    border: none;
+}
+
+.logining .r:hover {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+.registering {
+    margin: 50px auto;
+    padding: 30px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: rgb(218, 230, 207);
+    box-shadow: 20px 20px rgb(218, 230, 207, 0.43);
+}
+
+.registering .lorr {
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.registering .l,
+.registering .r {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 5px #fff solid;
+}
+
+.registering .l {
+    color: #F6F6F6;
+    border: none;
+}
+
+.registering .l:hover {
+    color: #fff;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+
+
+
+.account,
+.password,
+.nickname,
+.role,
+.card_id,
+.phone,
+.password1,
+.password2 {
+    font-size: 20px;
+    color: rgb(61, 61, 61, .83);
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: #fff;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #b1aeae;
+}
+
+input:invalid {
+    padding: 0px 10px;
+    color: rgb(208, 9, 9);
+    border: 1.3px solid rgb(208, 9, 9);
+}
+
+input:invalid+span {
+    display: block;
+}
+
+input:valid {
+    padding: 0px 10px;
+}
+
+.Role {
+    height: 16px;
+    width: 30px;
+}
+
+label {
+    font-size: 18px;
+}
+
+button {
+    margin-top: 10%;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.btn {
+    background-color: rgb(167, 212, 197, .62);
+}
+
+.btn:hover {
+    background-color: rgb(167, 212, 197);
+}

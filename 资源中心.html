@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="zn-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源中心</title>
+    <link rel="stylesheet" href="base.css" />
+    <link rel="stylesheet" href="资源中心.css" />
+</head>
+
+<body>
+    <div class="all" id="app">
+        <!--头部-->
+        <div class="header">
+            <!--logo-->
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo1.png" />
+                </a>
+            </div>
+            <!--导航栏-->
+            <div class="daohanglan">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="初步筛查.html">筛查诊断</a></li>
+                    <li><a href="资源中心.html" class="shouye">资源中心</a></li>
+                    <li><a href="家庭指导.html">家庭指导</a></li>
+                    <li><a href="https://whyffish.github.io/Wisdom-Spectrum-Forum/">智启论坛</a></li>
+                    <li><a href="用户反馈.html">用户反馈</a></li>
+                    <li><a href="问答.html">AI助手</a></li>
+                </ul>
+            </div>
+            <!--检索-->
+            <div class="search">
+                <input type="text" placeholder="搜一搜">
+                <span></span>
+            </div>
+            <div class="login" :style="{display:unlogining}">
+                <a href="login.html">登录/注册</a>
+            </div>
+            <div class="login" :style="{display:logining}">
+            </div>
+        </div>
+        <!--banner-->
+        <div class="banner" :style="{backgroundColor:bannerbgc}">
+            <img :src="bannersrc" />
+        </div>
+
+
+
+        <div class=" w">
+            <div class="cedaohang">
+                <ul>
+                    <li :style="{backgroundColor:s1}" @click="Science">专业科普</li>
+                    <li :style="{backgroundColor:s2}" @click="News">新闻资讯</li>
+                    <li :style="{backgroundColor:s3}" @click="Video">科普视频</li>
+                    <li :style="{backgroundColor:s4}" @click="Story">名人故事</li>
+                    <li :style="{backgroundColor:s5}" @click="Book">图书推荐</li>
+                    <li :style="{backgroundColor:s6}" @click="Success">成功案例</li>
+                </ul>
+            </div>
+            <div class="science" :style="{display:science}">
+                <div class="question1">
+                    <div class="question11">
+                        <div class="main">—— 学习障碍的定义 ——</div>
+                        <div class="answera">
+                            <div class="answer1">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp台湾，刘弘白在《学习障碍100问》（1993）一书中指出：
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学习障碍是指智力正常的孩子在说、写、读、算的过程中，能力的获得与运用上所产生的困难。……医生称之为“大脑功能轻微不良”，心理学者称之为“高智商低成就”，教师们称之为“学习不振”或“学习缺陷”，而近年来国内特殊教育界则采用“学习障碍”来描述此种现象。
+                            </div>
+                            <div class="answer2">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp上海市教育科学研究所“初中学习困难学生教育的研究”课题组于20世纪90年代初对学习困难学生进行了界定，提出：
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp所谓学习困难学生指的是智力正常，但学习效果低下达不到国家规定的教学大纲要求的学生。
+                            </div>
+                            <div class="answer3">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp中央教科所：陈云英、王书荃于1995年提出：
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学习障碍是指在获取与运用听讲、说话、阅读、书写、推理或数学能力上有重大困难的学习异常者，这些人的智力是正常的。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question12">
+                        <div class="main">—— 常见的学习障碍类型 ——</div>
+                        <div class="answerb">
+                            <div class="answer1">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp首都儿科研究所孙静等人(1995)将学习障碍分成五大类：
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第一类为听语能力异常，分为一般缺陷、接收性和表达性听语能力异常；
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第二类是阅读能力异常，可分为视觉性和听觉性阅读能力障碍；
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第三类为书写能力异常，是由于视动统合功能异常所致；
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第四类为运算能力异常，指直接涉及数字概念与几何符号的运算上的能力失常；
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp第五类为非语言学习能力异常。
+                            </div>
+                            <div class="answer2">
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp2013年的DSM-5和2022年的ICD11将学习障碍分为阅读障碍，数学障碍和书写障碍。
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp阅读障碍最常见，具体表现为读出拼写和识别单词方面的障碍。
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp书写障碍分为动作书写障碍、空间书写障碍和听写障碍。动作书写障碍显示手部力量和耐力测量异常，空间书写障碍损害字母间距和绘画能力，听写障碍表现为语音记忆与拼字记忆互相转化功能低。
+                                <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数学障碍少，由语言工作记忆，长期记忆和视觉空间处理缺陷引起，在临床上有核心数、记忆、推理和视觉空间四个亚型缺陷
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="question3">—— 早期迹象和识别 ——</div>
+                <div class="answerc">
+                    <div class="answer1">
+                        <div class="main">
+                            语言理解困难
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp语言理解和语言表达不良，有的即使能说出少许单词，但构音明显困难。若伴有音乐理解困难则同时缺乏节奏感。常表现“听而不闻”，不理睬父母或老师的讲话，易被视为不懂礼貌。有的机械记忆字句较好，而且能运用较复杂的词汇，但对文章理解低劣，不合时宜地使用语词或文章，或“鹦鹉学舌”般。常表现喋喋不休或多嘴多舌，用词联想奔逸，使人难懂在讲什么。喋喋不休往往是患儿为寻求别人关注和理解而表现的一种手段。
+                        </div>
+                    </div>
+                    <div class="answer2">
+                        <div class="main">
+                            阅读障碍
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp读字遗漏或增字、阅读时出现“语塞”或太急、字节顺序混乱、漏行、阅读和书写时视觉倒翻、不能逐字阅读、计算时位数混乱和颠倒；默读不专心，易用手指指行阅读；若是英语或拼音可整体读出，但不能分读音节；组词读出时不能提取相应的词汇，对因果顺序表达欠佳，并且命名物体困难。
+                        </div>
+                    </div>
+                    <div class="answer3">
+                        <div class="main">
+                            书写困难
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp缺乏主动书写，手技巧笨拙(如不会使用筷子、穿衣系扣子笨拙、握持笔困难、绘画不良)，写字丢偏旁部首或张冠李戴，写字潦草难看，涂抹过多，错别字多。
+                        </div>
+                    </div>
+                </div>
+                <div class="question4">—— 评估和诊断 ——</div>
+                <div class="answerd">
+                    <div class="a">
+                        学习困难的界定不同,其测量方法和工具也不相同。目前,世界上比较经典的有以下几种。
+                    </div>
+                    <div class="answer1">
+                        <div class="main">
+                            学习障碍评估量表
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学习障碍评估量表(修订第二版)(Learning Disability Evaluation
+                            Scale,LDES-R2)是由S.B.McCarney和T.J.Arthaud于2007年编制的。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp该工具旨在使教学人员能够记录儿童和青少年学习障碍的最具特色的表现行为，它可以提供基于最常被接受的学习障碍定义的学习困难者的概况。LDES-R2包括听、思维、说、读、写作、拼写和计算七个维度。题目反应方式属于李克特四级评分，共有88项。标准化样本的人口统计学特征涵盖性别、居住地、种族、地理区域和父母职业等变量。该工具具有良好的信效度指标。该量表的因子结构还需要进一步的研究验证。
+                        </div>
+                    </div>
+                    <div class="answer2">
+                        <div class="main">
+                            学习障碍检核表
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学习障碍检查表(Learning disabilities
+                            check-list,LDC)由美国国家学习障碍中心制定(NCLD,2007)。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学习困难是描述异质障碍群体的一个术语，障碍主要表现为听、说、读、写、推理、数学和社交技能等方面。学习障碍检查表包括以下维度:大肌肉动作和精细运动技能、语言、阅读、书面语言、数学、注意力、社会/情感和其他。该工具可用于评估学前儿童、中小学生和成人。共有96个项目。
+                        </div>
+                    </div>
+                    <div class="answer3">
+                        <div class="main">
+                            学生评估量表
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学生评估量表(the Pupil Rating
+                            ScaleR-<br />evised,PRS)该量表由美国心理和语言学家H.Myklebust于1965年编制。教师可以使用该量表检测那些在中枢听觉测试中有缺陷的学生。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp该量表是一个行为检核清单,教师可以用来评价学生在言语和非言语能力方面五大类的表现，包括听觉理解和记忆、语言、时间和方位判断、运动、个人与社会行为。共有24个项目，按照“1”和“0”<br />计分。该量表可用于评估3-15岁青少年，一般由教师或医生进行评定。由于该量表的权威性和在国际上的广泛影响，先后被我国学者修订并在实际中大量使用。
+                        </div>
+                    </div>
+                </div>
+                <div class="question5">—— 治疗和干预 ——</div>
+                <div class="answere">
+                    <div class="answer1">
+                        <div class="main">
+                            行为干预模式
+                            <br />(Behavior modification)
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这种干预模式是以行为主义的基本原则为指导思想，干预方式既包括及时强化，也包括代币制、行为合同、“冷板凳”、反应代价等直接针对学习障碍儿童的、较早形成的比较完善的干预方法。
+                        </div>
+                    </div>
+                    <div class="answer2">
+                        <div class="main">
+                            认知 -- 行为干预模式
+                            <br />(Cognitive behavior modification)
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这种模式更强调使学习障碍儿童自己形成主动的、自我调控的学习风格。认知
+                            --行为干预模式强调对学习障碍儿童进行认知策略训练和自我监控训练。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这一干预模式最突出的特点，一是尽量引导儿童成为自己学习过程的主动参与者;二是重视示范目标策略、方法的运用;三是以儿童的外部言语为中介。这些特点保证学习障碍儿童对自已学习过程的控制，改变其原有的消极被动的学习风格。
+                        </div>
+                    </div>
+                    <div class="answer3">
+                        <div class="main">
+                            同伴指导模式
+                            <br />(Partner direct)
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是20世纪80年代中期兴起的新型的训练模式。即让一个学习障碍儿童帮助另一个学习障碍儿童，或让学习障碍儿童的同伴（正常）帮助他。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp同伴指导模式的进行首先需要抽取部分儿童作为指导者，关键是要对指导者进行特殊的训练。
+                        </div>
+                    </div>
+                </div>
+                <div class="answerf">
+                    <div class="answer1">
+                        <div class="main">
+                            神经系统功能的训练
+                            <br />(Nervous system functionpractice)
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这种训练也是心理过程训练。这是从心理过程障碍的病理机制假设出发而设计的学习障碍干预方法。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp该类方法的创立者认为，对基本心理过程进行训练就可以改善脑功能，进而改善学习过程和提高学习效果。在改善心理过程及神经系统功能的框架下，研究者设计了许多干预方案，针对不同的心理过程进行训练，如视觉运动
+                            -- 视觉训练法和心理语言训练法。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp近年来，在我国台湾、日本等地区和国家中，一种名为“感觉统合训练”的神经系统功能训练法得到了一定范围的使用，这种训练法也在我国大陆地区开始流行起来。
+                        </div>
+                    </div>
+                    <div class="answer2">
+                        <div class="main">
+                            生化与药物治疗
+                            <br />(Bio-chemical medication)
+                        </div>
+                        <div class="intro">
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这种干预和心理与教育类型的干预模式不同，系列化与药物治疗假设儿童的学习障碍问题是因其神经系统的结构与病理性问题等造成的，因此采用药物治疗，首先控制和改善学习障碍儿童的病情，进而改进其学习状况。
+                            <br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp学习障碍儿童药物治疗有一定疗效，但其治疗效果有限。
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news" :style="{display:news}">
+                <div class="news1">
+                    <div class="content" v-for="item in newslist" :key="item.id" v-if="item.src"
+                        @click="newsdetailspage(item.id)">
+                        <img v-if="item.src" :src="item.src"></img>
+                        <div class="title">{{item.title}}</div>
+                    </div>
+                </div>
+                <div class="news2">
+                    <div class="content" v-for="(item,index) in newslist" :key="item.id" v-if="!item.src"
+                        @click="newsdetailspage(item.id)">
+                        <div class="title">{{item.title}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="video" :style="{display:video}">
+                <div class="video1">
+                    <div class="content" v-for="(item,index) in videolist" :key="item.id">
+                        <a :href="item.videosrc" target="_blank" class="title">
+                            <img v-if="item.src" :src="item.src"></img>
+                            <div>{{item.title}}</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="story" :style="{display:story}">
+                <div class="story1">
+                    <div class="content" v-for="item in storylist" :key="item.id">
+                        <div class="title">{{item.title}}</div>
+                        <div class="st">{{item.story}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="book" :style="{display:book}">
+                <div class="book1">
+                    <div class="content" v-for="item in booklist" :key="item.id" @click="bookdetailspage(item.id)">
+                        <div class="title">{{item.title}}</div>
+                        <div class="explaincontain">
+                            <div class="explain" v-for="(item,index) in item.explain" :key="index">{{item.e}}</div>
+                        </div>
+                        <div class="contain">
+                            <img :src="item.src" mode="widthFix"></img>
+                            <div class="infro">{{item.infro}}</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="success" :style="{display:success}">
+                <div class="success1">
+                    <div class="content" v-for="item in successlist" :key="item.id"
+                        @click="successdetailspage(item.id)">
+                        <div class="title">{{item.title}}</div>
+                        <div class="contain">
+                            <img :src="item.src" mode="widthFix"></img>
+                            <div class="infro">{{item.infro}}</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+
+
+        <!--footer-->
+        <div class="footer">
+            <div class="top">
+                <ul>
+                    <li>
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo1.png" />
+                            </a>
+                        </div>
+                    </li>
+                    <li class="mid">
+                        <div>(邮编)xxxxxxxxxxxxxxxxxx
+                            xxxxxxxxx</div>
+                        <div>(电话)xxxxxxxxxxxxxxxxxx</div>
+                        <div>(地址)xxxxxxxxxxxxxxxxxx
+                            xxxxxxxxxxxx
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon"><img src="images/QR.png" style="max-width: 100%;max-height: 100%;"></div>
+                        <div class="icon"><img src="images/QR.jpg"
+                                style="max-width: 100%;max-height: 100%;margin-left: 20px;">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="#" target="-blank">关于我们</a> |
+                    <a href="#" target="-blank">帮助中心</a> |
+                    <a href="#" target="-blank">免责声明</a> |
+                    <a href="#" target="-blank">商务合作</a> |
+                    <a href="#" target="-blank">友情链接</a>
+                </p>
+                <p>
+                    CopyRight @
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+    const app = new Vue({
+        el: '#app',
+        data: {
+            science: "block",
+            news: "none",
+            video: "none",
+            story: "none",
+            book: "none",
+            success: "none",
+            s1: "#a7d4c5",
+            s2: "#dcdc93",
+            s3: "#dcdc93",
+            s4: "#dcdc93",
+            s5: "#dcdc93",
+            s6: "#dcdc93",
+            bannersrc: "./images/资源中心.png",
+            bannerbgc: "#a7d4c5",
+            newslist: [
+                {
+                    id: 5,
+                    src: "./images/新闻4.png",
+                    title: "“眼动追踪术：读写障碍识别的魔法钥匙”"
+                },
+                {
+                    id: 6,
+                    src: "./images/新闻6.png",
+                    title: "“教育部积极回应人大代表建议：强化特殊教育支持，助力学习障碍儿童随班就读新举措”"
+                },
+                {
+                    id: 1,
+                    src: "",
+                    title: "广东省“十四五”特殊教育发展提升行动计划"
+                },
+                {
+                    id: 2,
+                    src: "",
+                    title: "深圳市医师协会儿童健康专业委员会学习障碍专业组成立大会暨学习障碍诊疗新进展研讨班顺利召开"
+                },
+                {
+                    id: 3,
+                    src: "",
+                    title: "2024年广东省特殊教育学校骨干 教师示范培训课开班﹣﹣正式开班"
+                },
+                {
+                    id: 4,
+                    src: "",
+                    title: "少年何愁？守护青少年的心灵净土，佛山这样做→"
+                },
+                {
+                    id: 7,
+                    src: "./images/新闻2.png",
+                    title: "“《“十四五”特殊教育发展提升行动计划：强化高质量教育体系，推动特殊教育全面发展》”"
+                },],
+            videolist: [
+                {
+                    id: 1,
+                    src: "./images/视频1.jpg",
+                    videosrc: "https://www.bilibili.com/video/BV1AZ4y1Z7NW?vd_source=dfd31f7e955debade11e078cefa60cbc",
+                    title: "“《地球上的星星》 ：他们就像天上的星星，在遥远而又漆黑的夜里独自闪烁”"
+                },
+                {
+                    id: 2,
+                    src: "./images/视频2.png",
+                    videosrc: "https://www.bilibili.com/video/BV1pD4y1k7r5?vd_source=dfd31f7e955debade11e078cefa60cbc",
+                    title: "『TED』关于学习障碍的思考：通过直接观察大脑电波，一位被误诊为发展障碍的孩子重获新生！"
+                }
+            ],
+            storylist:
+                [{
+                    id: 1,
+                    title: "迈克尔·乔丹（Michael Jordan）",
+                    story: "作为篮球界的传奇人物，迈克尔·乔丹在篮球场上取得了辉煌成就。然而，很少有人知道他在童年时期曾被诊断出患有阅读障碍症。面对这一困难，乔丹并没有放弃，而是投入了更多的时间来学习和阅读。他选择读一些简单的故事书，逐渐提高了自己的阅读水平。这种坚持和努力不仅帮助他在篮球场上取得了成功，还使他能够出版多部畅销自传。"
+                },
+                {
+                    id: 2,
+                    title: "托马斯·爱迪生（Thomas Edison）",
+                    story: "托马斯·爱迪生是美国的发明家和企业家，被认为是电灯和其他许多重要发明的创造者。然而，他的早年生活并不顺利，尤其是在学习方面。爱迪生在学校时期因为阅读障碍而备受困扰，他无法像其他同学那样轻松地阅读和理解文字。因此，他经常被老师视为“问题学生”，并在学校中遭受了许多挫折。 尽管面临这样的困难，爱迪生并没有放弃。他发现自己对实验和发明有浓厚的兴趣，并开始专注于这个领域。他花费了大量时间自学和实践，通过努力和坚持不懈，最终成为了一名杰出的发明家。爱迪生的成功证明了阅读障碍并不一定会限制一个人的成就，只要有足够的决心和努力，人们仍然可以在其他领域取得成功。 爱迪生的故事也鼓励了那些在阅读方面遇到困难的人不要放弃，要寻找自己的兴趣和优势，并努力发展它们。通过不断学习和实践，人们可以克服自己的障碍，并实现自己的梦想。"
+                },
+                {
+                    id: 3,
+                    title: "列奥纳多·迪·皮耶罗·达·芬奇（Leonardo di ser Piero da Vinci）",
+                    story: "达芬奇是一个多才多艺的艺术家和科学家，他在多个领域都取得了显著的成就。他从小就展现出了对世界的极大好奇心，但同时也面临了一些挑战。例如，达芬奇是一个左撇子，他习惯从右到左书写托斯卡纳方言，并且他的书写方式是镜面书写，即文字是镜像反写的，需要通过镜子才能正常阅读。这种特殊的书写方式被专家认为是他患有严重阅读障碍的证据。然而，这些困难并没有阻止他追求知识和探索世界的热情。他的童年时期虽然充满了挑战，但他最终成为了画家安德烈·德尔·韦罗基奥的学徒，并开始了他在艺术和科学领域的探索之旅。"
+                },
+                ],
+            booklist:
+                [{
+                    id: 1,
+                    src: "./images/儿童阅读1.png",
+                    title: "《A Walk in the Words》",
+                    infro: "这本绘本不仅可以带给阅读困难的孩子安慰和鼓励，也让父母看到了他们面对的重重压力。父母的理解与支持，可以帮助他们找到上天打开的那一扇窗。",
+                    explain: [{ index: 1, e: "作者：Hudson Talbott" }]
+                },
+                {
+                    id: 2,
+                    src: "./images/儿童阅读2.png",
+                    title: "《我，一点儿也不懒》",
+                    infro: "这是一本非常特殊而感人的绘本，作者是日本研究该领域的专家品川裕香。这本书的主人公是她接触过的所有阅读障碍群体的缩影，她希望通过这本小书，让普通人对阅读障碍症有所了解，也想给孩子已经出现阅读障碍问题的家长一些信心。",
+                    explain: [{ index: 1, e: "作者：[日]品川裕香" }, { index: 2, e: "绘者：[日]北原明日香" }, { index: 3, e: "译者：丁丁虫" }, { index: 4, e: " 版本：青岛出版社" }]
+                },
+                {
+                    id: 3,
+                    src: "./images/家长阅读1.png",
+                    title: "《聪明的笨小孩》",
+                    infro: "儿童学习阅读的过程，有着极大的个体差异。这本书被誉为儿童阅读障碍领域的圣经，作者萨莉·施威茨是一位神经科学家，通过多年的经验，她揭示了阅读和阅读障碍的内在运作机制，为阅读障碍儿童的成长提供了积极正面的建议。",
+                    explain: [{ index: 1, e: "作者：[美]萨莉·施威茨" }, { index: 2, e: "译者：刘丽、康翠萍等" }, { index: 3, e: "版本：北京师范大学出版社，2019年3月" }]
+                },
+                {
+                    id: 4,
+                    src: "./images/家长阅读3.png",
+                    title: "《走出迷宫：认识发展性阅读障碍》",
+                    infro: "如何结合现实进行实践操作，可能是家长和老师更感兴趣的焦点。孟祥芝希望传递这些观念：阅读障碍可以通过适当干预得到改善，中文阅读障碍干预需要突出汉字表意文字特性，以及阅读障碍者同样拥有某些优势。",
+                    explain: [{ index: 1, e: "作者：孟祥芝" }, { index: 2, e: "版本：北京大学出版社，2018年6月" }]
+                },
+                {
+                    id: 5,
+                    src: "./images/家长阅读2.jpg",
+                    title: "《走出儿童阅读障碍的困境》",
+                    infro: "本书运用通俗易懂的语言、形象生动的图表、简单实用的问卷等，将儿童阅读障碍的相关内容，以各个独立的话题呈现，阐述了儿童阅读障碍的相关知识。内容包括阅读障碍的基础知识、阅读障碍的诊断及其影响因素、家长与儿童如何应对阅读障碍，以及阅读障碍儿童的指导与矫正方法。",
+                    explain: [{ index: 1, e: "主编：张明" }, { index: 2, e: "版本：科学出版社，2017年11月" }]
+                },
+                {
+                    id: 6,
+                    src: "./images/亲子阅读1.jpg",
+                    title: "《请爱我本来的样子》",
+                    infro: "这本书告诉我们即使阅读障碍儿童可能在阅读上存在困难，他们的学习能力却没有任何问题。相反他们先天的优势技能，包括语言、社交、空间、动觉、视觉、数学、音乐能力等，是他们获取知识的关键。通过专注于学习，而不是专注于标准方式的阅读，就可以培养阅读障碍孩子的自信心，使其在课堂内外都能茁壮成长。",
+                    explain: [{ index: 1, e: "作者：本·福斯 " }, { index: 2, e: "版本：中国纺织出版社，2023年10月" }]
+                },
+                {
+                    id: 7,
+                    src: "./images/亲子阅读2.jpg",
+                    title: "《帮助孩子克服读写障碍》",
+                    infro: "教育专家丹尼尔·富兰克林博士以神经科学、教育学和依恋式教学的前沿研究为基础，结合自己30多年的一线教育案例，深度剖析了读写障碍、阅读障碍、计算障碍、信息处理缺陷等近10种常见的学习障碍。并针对各类学习障碍提供了家庭团队目标设定法等，可应用于校园学习和日常情景中的各种策略工具和实践方法（不论孩子是否有学习障碍均可阅读使用）。",
+                    explain: [{ index: 1, e: "作者：[美]丹尼尔·富兰克林 " }, { index: 2, e: "版本：北京联合出版公司，2023年11月" }]
+                },
+                ],
+            successlist:
+                [{
+                    id: 1,
+                    src: "./images/成功案例3.jpg",
+                    title: "“逆风飞翔：一个读写障碍少年的纽约大学梦",
+                    infro: "在这个世界上，有些孩子被赋予了特殊的挑战，他们被称为读写障碍者。他们的世界里，字母和数字似乎总是调皮地变换位置，让他们在常规的学习路径上步履蹒跚。魏天翔，一个19岁的男孩，就是这样一位特殊的挑战者。他的故事，是关于勇气、坚持和母爱的颂歌，也是关于如何将不可能变为可能的奇迹。"
+                },
+                {
+                    id: 2,
+                    src: "./images/成功案例4.jpg",
+                    title: "“在挑战中绽放：墨墨的读写困难与自我探索之旅",
+                    infro: "在这个充满挑战的世界里，每个孩子都是独一无二的星辰，他们以自己的方式闪耀。墨墨，一个15岁的少年，用他的故事告诉我们，即使在读写困难的阴影下，也能发现自我，绽放光芒。"
+                },
+                {
+                    id: 3,
+                    src: "./images/成功案例2.jpg",
+                    title: "音符与字母：冯思齐的音乐之旅与阅读障碍",
+                    infro: "在这个世界上，每个孩子都是独特的，他们以不同的方式感知世界，以不同的速度成长。冯思齐，一个四年级的少年，他的故事是关于挑战、发现和接受的旅程。他被诊断为阅读障碍，这让他的学习之路充满了艰辛，但他的音乐天赋却如同璀璨的星辰，照亮了他的未来。"
+                }],
+        },
+        methods: {
+            Science() {
+                this.science = "block";
+                this.news = "none";
+                this.video = "none";
+                this.story = "none";
+                this.book = "none";
+                this.success = "none";
+                this.s1 = "#a7d4c5";
+                this.s2 = "#dcdc93";
+                this.s3 = "#dcdc93";
+                this.s4 = "#dcdc93";
+                this.s5 = "#dcdc93";
+                this.s6 = "#dcdc93";
+                this.bannersrc = "./images/资源中心.png";
+                this.bannerbgc = "#a7d4c5";
+            },
+            News() {
+                this.science = "none";
+                this.news = "block";
+                this.video = "none";
+                this.story = "none";
+                this.book = "none";
+                this.success = "none";
+                this.s1 = "#dcdc93";
+                this.s2 = "#a7d4c5";
+                this.s3 = "#dcdc93";
+                this.s4 = "#dcdc93";
+                this.s5 = "#dcdc93";
+                this.s6 = "#dcdc93";
+                this.bannersrc = "./images/新闻资讯.png";
+                this.bannerbgc = "#a7d4c5";
+            },
+            Video() {
+                this.science = "none";
+                this.news = "none";
+                this.video = "block";
+                this.story = "none";
+                this.book = "none";
+                this.success = "none";
+                this.s1 = "#dcdc93";
+                this.s2 = "#dcdc93";
+                this.s3 = "#a7d4c5";
+                this.s4 = "#dcdc93";
+                this.s5 = "#dcdc93";
+                this.s6 = "#dcdc93";
+                this.bannersrc = "./images/科普视频.png";
+                this.bannerbgc = "#a7d4c5";
+            },
+            Story() {
+                this.science = "none";
+                this.news = "none";
+                this.video = "none";
+                this.story = "block";
+                this.book = "none";
+                this.success = "none";
+                this.s1 = "#dcdc93";
+                this.s2 = "#dcdc93";
+                this.s3 = "#dcdc93";
+                this.s4 = "#a7d4c5";
+                this.s5 = "#dcdc93";
+                this.s6 = "#dcdc93";
+                this.bannersrc = "./images/名人故事.png";
+                this.bannerbgc = "#a7d4c5";
+            },
+            Book() {
+                this.science = "none";
+                this.news = "none";
+                this.videp = "none";
+                this.story = "none";
+                this.book = "block";
+                this.success = "none";
+                this.s1 = "#dcdc93";
+                this.s2 = "#dcdc93";
+                this.s3 = "#dcdc93";
+                this.s4 = "#dcdc93";
+                this.s5 = "#a7d4c5";
+                this.s6 = "#dcdc93";
+                this.bannersrc = "./images/图书推荐.png";
+                this.bannerbgc = "#fcd9a3";
+            },
+            Success() {
+                this.science = "none";
+                this.news = "none";
+                this.video = "none";
+                this.story = "none";
+                this.book = "none";
+                this.success = "block";
+                this.s1 = "#dcdc93";
+                this.s2 = "#dcdc93";
+                this.s3 = "#dcdc93";
+                this.s4 = "#dcdc93";
+                this.s5 = "#dcdc93";
+                this.s6 = "#a7d4c5";
+                this.bannersrc = "./images/成功案例.png";
+                this.bannerbgc = "#ecf8e5";
+            },
+            newsdetailspage(e) {
+                console.log(e);
+                window.location.href = "详情.html?id=" + e + "&news=true";
+            },
+            bookdetailspage(e) {
+                console.log(e);
+                window.location.href = "详情.html?id=" + e + "&book=true";
+            },
+            successdetailspage(e) {
+                console.log(e);
+                window.location.href = "详情.html?id=" + e + "&success=true";
+            },
+        }
+    })
+</script>
+
+</html>
